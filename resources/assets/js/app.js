@@ -19,3 +19,8 @@ $('a.interstitial').on('click', () =>
 window.addEventListener('pageshow', (event) => {
         $('#interstitial').hide()
   });
+
+
+$('.link-collapse').on('click', function(event) {
+    window.open($(this).attr('href'), '_self');
+});

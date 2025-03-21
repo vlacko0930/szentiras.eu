@@ -1,0 +1,7 @@
+{% for chapter in 1..maxChapter %}
+    {% if actualChapter != chapter %}
+        <a data-bs-toggle="false" data-bs-parent="#" class="btn btn-sm btn-outline-primary link-collapse" role="button" href="/{{ translationAbbrev }}/{{ bookAbbrev }}{{ chapter }}">{{ chapter }}</a>
+    {% else %}
+        <a data-bs-toggle="false" data-bs-parent="#" href="#" class="btn btn-sm btn-secondary disabled link-collapse"  >{{ actualChapter }}</a>
+    {% endif %}
+{% endfor %}
