@@ -1,4 +1,5 @@
 import './quickSearch.js';
+import './shepherd-tour.js';
 
 // Theme switching functionality with three states: light, dark, system
 document.addEventListener('DOMContentLoaded', function() {
